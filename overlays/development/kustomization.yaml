@@ -1,11 +1,11 @@
+
 namespace: dev
 resources:
   - ../../base
   - namespace.yaml
   - configmap.yaml
-
 images:
   - name: wangamy/hellojendoc:latest
-    newTag: "15"
-
+    newTag: "18"
 namePrefix: dev-
+
