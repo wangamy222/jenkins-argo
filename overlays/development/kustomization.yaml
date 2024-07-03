@@ -6,6 +6,6 @@ resources:
 
 images:
   - name: wangamy/hellojendoc:latest
-    newTag: "14"
+    newTag: "15"
 
 namePrefix: dev-
