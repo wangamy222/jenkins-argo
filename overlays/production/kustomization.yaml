@@ -6,7 +6,7 @@ resources:
 
 images:
   - name: wangamy/hellojendoc:latest
-    newTag: "0.1"
+    newTag: "latest"
 
 namePrefix: prod-
 
