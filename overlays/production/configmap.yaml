@@ -5,5 +5,3 @@ metadata:
   namespace: prod
 data:
   environment: production
-literals:
-    - image=wangamy/hellojendoc:version

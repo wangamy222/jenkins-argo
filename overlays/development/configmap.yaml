@@ -5,5 +5,3 @@ metadata:
   namespace: dev
 data:
   environment: development
-literals:
-    - image=wangamy/hellojendoc:version
