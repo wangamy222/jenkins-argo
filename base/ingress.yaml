@@ -12,4 +12,4 @@ spec:
           service:
             name: wangamy
             port: 
-              number: 9999
+              number: 80
