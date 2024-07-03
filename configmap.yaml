@@ -1,9 +1,7 @@
-                    apiVersion: v1
-                    kind: ConfigMap
-                    metadata:
-                      name: docker-image-info
-                      namespace: default
-                    data:
-                      image: "wangamy/hellojendoc:9"
-                    EOF
-                    
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: docker-image-info
+  namespace: default
+data:
+  image: "wangamy/hellojendoc:11"
