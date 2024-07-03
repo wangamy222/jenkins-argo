@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wangamy-ui
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: wangamy-ui
+  template:
+    metadata:
+      labels:
+        app: wangamy-ui
+    spec:
+      containers:
+      - name: wangamy-ui
+        image: $(IMAGE_FROM_CONFIGMAP)
+        ports:
+        - containerPort: 80
+        env:
+        - name: IMAGE_FROM_CONFIGMAP
+          valueFrom:
+            configMapKeyRef:
+              name: docker-image-info
+              key: image
+      volumes:
+      - name: config-volume
+        configMap:
+          name: docker-image-info
