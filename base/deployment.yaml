@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wangamy
+  labels:
+    app: wangamy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: wangamy
+  template:
+    metadata:
+      labels:
+        app: wangamy
+    spec:
+      containers:
+      - name: wangamy
+        image: wangamy/hellojendoc:latest
+        ports:
+        - containerPort: 80

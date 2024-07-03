@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: wangamy-ui
-        image: "$(IMAGE_FROM_CONFIGMAP)"
+        image: $(IMAGE_FROM_CONFIGMAP)
         ports:
         - containerPort: 80
         env:

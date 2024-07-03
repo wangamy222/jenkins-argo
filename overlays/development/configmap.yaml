@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: wanagmy-config
+  namespace: dev
+data:
+  environment: development
+literals:
+    - image=wangamy/hellojendoc:version

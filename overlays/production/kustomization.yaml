@@ -1,0 +1,12 @@
+namespace: prod
+resources:
+  - ../../base
+  - namespace.yaml
+  - configmap.yaml
+
+images:
+  - name: wangamy/hellojendoc:latest
+    newTag: <new_version_tag>
+
+namePrefix: prod-
+
