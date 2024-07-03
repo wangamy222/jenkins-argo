@@ -6,6 +6,6 @@ resources:
 
 images:
   - name: wangamy/hellojendoc:latest
-    newTag: <new_version_tag>
+    newTag: "0.1"
 
 namePrefix: dev-
