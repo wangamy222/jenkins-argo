@@ -5,7 +5,7 @@ resources:
   - kustomization.yaml
 
 images:
-  - name: wangamy/hellojendoc:latest
-    newTag: "wangamy/hellojendoc:15"
+  - name:  "wangamy/hellojendoc:18"
+    newTag: "18"
 
 namePrefix: dev-
