@@ -4,6 +4,6 @@
                       name: docker-image-info
                       namespace: default
                     data:
-                      image: "wangamy/hellojendoc:8"
+                      image: "wangamy/hellojendoc:9"
                     EOF
                     
