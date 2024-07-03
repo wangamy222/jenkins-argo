@@ -1,7 +1,11 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: docker-image-info
-  namespace: default
-data:
-  image: "wangamy/hellojendoc:12"
+namespace: dev
+resources:
+  - ../../base
+  - namespace.yaml
+  - configmap.yaml
+
+images:
+  - name: wangamy/hellojendoc:latest
+    newTag: "wangamy/hellojendoc:14"
+
+namePrefix: dev-
