@@ -6,6 +6,6 @@ resources:
   - configmap.yaml
 images:
   - name: wangamy/hellojendoc:latest
-    newTag: "53"
+    newTag: "54"
 namePrefix: dev-
 
